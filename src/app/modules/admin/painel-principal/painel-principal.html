@@ -1,1 +1,59 @@
-<p>painel-principal works!</p>
+<app-navbar />
+
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h2 class="display-4 mb-3">Bem-vindo ao Sistema de Agenda de Tarefas</h2>
+        <p class="lead text-muted">Gerencie suas tarefas diárias de forma simples e eficiente.</p>
+        <hr class="my-4" />
+    </div>
+
+    <!-- Sessão de Ações Rápidas -->
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-lg border-0 rounded-3 hover-effect">
+                <div class="card-body d-flex flex-column text-center p-4">
+                    <h5 class="card-title fw-bold mb-3">Cadastrar Nova Tarefa</h5>
+                    <p class="card-text flex-grow-1">Adicione uma nova tarefa à sua agenda com prioridade e data definidas.</p>
+                    <a routerLink="/admin/cadastro-tarefas" class="btn btn-primary btn-lg rounded-pill">
+                        <i class="fas fa-plus-circle me-2"></i>Cadastrar
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-lg border-0 rounded-3 hover-effect">
+                <div class="card-body d-flex flex-column text-center p-4">
+                    <h5 class="card-title fw-bold mb-3">Consultar Tarefas</h5>
+                    <p class="card-text flex-grow-1">Veja todas as suas tarefas cadastradas e atualize seu progresso.</p>
+                    <a routerLink="/admin/consulta-tarefas" class="btn btn-success btn-lg rounded-pill">
+                        <i class="fas fa-search me-2"></i>Consultar
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-lg border-0 rounded-3 bg-light">
+                <div class="card-body d-flex align-items-center p-4">
+                    <blockquote class="blockquote mb-0">
+                        <p class="fs-5 fst-italic text-secondary">
+                            "A produtividade não é uma coincidência. É o resultado de um compromisso com a excelência,
+                            planejamento inteligente e esforço focado."
+                        </p>
+                        <footer class="blockquote-footer mt-2">Pensamento do Dia</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.hover-effect {
+    transition: transform 0.3s ease;
+}
+.hover-effect:hover {
+    transform: translateY(-5px);
+}
+</style>
